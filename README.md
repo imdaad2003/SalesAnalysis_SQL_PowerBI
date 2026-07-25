@@ -1,35 +1,198 @@
-# SalesAnalysis_SQL_PowerBI
+SalesAnalysis_SQL_PowerBI
+│
+├── README.md
+├── Sales Report.pbix
+├── Sales Report.pdf
+├── Sent Over Data - SalesBudget.xlsx
+│
+├── SQL
+│   ├── DIM_Calendar_Clean.sql
+│   ├── DIM_Customer_Clean.sql
+│   ├── DIM_Product_Clean.sql
+│   └── FACT_InternetSales_Clean.sql
+│
+├── Data
+│   ├── DIM_Calendar_Export.csv
+│   ├── DIM_Customer_Export.csv
+│   ├── DIM_Product_Export.csv
+│   └── FACT_InternetSales_Export.csv
+│
+└── Business Documents
+    ├── Business Demand Overview & User Stories.docx
+    └── Example Business Request.docx
 
-### Setup
-- This project requires SQL Server (SQL Express), Power BI Desktop
-- We will work with backup Data Warehouse (DW) data and Lightweight (LT) data. Obtain data and restore following instructions from [here.](https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15&tabs=ssms)
-- Compare DW and LT data to understand the difference between structured and unstructured data. We will primarily be working with Data Warehouse data.
-- Update Data Warehouse data using [sql script.](https://github.com/techtalkcorner/SampleDemoFiles/blob/master/Database/AdventureWorks/Update_AdventureWorksDW_Data.sql)
+This structure makes the project much more professional.
 
-### Business Request & User Stories
-- Read the sample business request, demand overview & filled-out user stories to understand the problem we are trying to solve with Data Analysis and what we consider as a solution.
+Suggested .gitignore
 
-### Clean the Data using T-SQL
-- Understand the difference between FACT tables & Dimension tables.
-- Identify which tables in the data are of interest with the help of the Business Request form.
-- Choose which columns are of interest to export by preparing and transforming these columns in SQL using concepts such as: renaming columns, combining columns, commenting in SQL script, formatting of SQL statements, WHERE clause, ORDER BY, LEFT JOIN, CASE() function and ISNULL() function. 
+Create a file named .gitignore in the project root with:
 
-### Create Dashboard in Power BI
-- Load Data
-- Organize & Prepare Tables
-- Connect Tables for Data Model
-- Import Fact_Budget
-- Calculation Measures
-- Dashboard Design
-- Import Custom Visual
-- Measure Table
-- Pie Chart
-- Line Chart
-- Bar Charts
-- Map Graph
-- Top 10 Graphs
-- Gradient Bar Chart Color
-- Customer Details
-- Pivot Table
+.vscode/
+*.bak
+*.log
+*.tmp
+Thumbs.db
+Desktop.ini
 
+Don't ignore your .pbix, .sql, .csv, or .docx files if you want them included in the repository.
 
+If you're building this as part of your Data Analyst portfolio, I can also help you make it recruiter-friendly by:
+
+adding a professional README.md with project overview, KPIs, screenshots, SQL queries, Power BI dashboard images, and insights,
+organizing the repository into a polished folder structure,
+and 
+preparing it so it stands out on GitHub and your resume.
+give proper readme 
+
+Below is a professional, ATS-friendly, GitHub-style README.md for your Sales Analysis SQL + Power BI project. It is written to showcase your SQL, Power BI, and Data Analytics skills to recruiters.
+
+# 📊 Sales Analysis using SQL & Power BI
+
+A complete end-to-end Business Intelligence project demonstrating how raw sales data can be transformed into meaningful business insights using **SQL Server** and **Microsoft Power BI**.
+
+This project follows a real-world data analytics workflow including data cleaning, data modeling, KPI creation, dashboard development, and business insights generation.
+
+---
+
+# 🚀 Project Overview
+
+The objective of this project is to analyze sales performance by leveraging SQL for data preparation and Power BI for interactive dashboard development.
+
+The project includes:
+
+- Data Cleaning using SQL
+- Data Transformation
+- Star Schema Data Modeling
+- DAX Measures
+- Interactive Dashboard
+- Business KPI Analysis
+- Sales Performance Reporting
+
+---
+
+# 🛠 Technologies Used
+
+| Tool | Purpose |
+|------|----------|
+| SQL Server | Data Cleaning & Transformation |
+| T-SQL | Querying & Data Preparation |
+| Microsoft Power BI | Dashboard Development |
+| DAX | KPI Calculations |
+| Excel | Budget Data |
+| CSV | Dimension & Fact Data |
+
+---
+
+# 📂 Project Structure
+
+```
+SalesAnalysis_SQL_PowerBI
+│
+├── README.md
+│
+├── Business Documents
+│   ├── Business Demand Overview & User Stories.docx
+│   └── Example Business Request.docx
+│
+├── SQL Scripts
+│   ├── DIM_Calendar_Clean.sql
+│   ├── DIM_Customer_Clean.sql
+│   ├── DIM_Product_Clean.sql
+│   └── FACT_InternetSales_Clean.sql
+│
+├── Data
+│   ├── DIM_Calendar_Export.csv
+│   ├── DIM_Customer_Export.csv
+│   ├── DIM_Product_Export.csv
+│   ├── FACT_InternetSales_Export.csv
+│   └── SalesBudget.xlsx
+│
+├── Power BI
+│   ├── Sales Report.pbix
+│   └── Sales Report.pdf
+│
+└── Images
+    ├── Dashboard.png
+    └── DataModel.png
+```
+
+---
+
+# 📋 Business Requirements
+
+The business wants to answer the following questions:
+
+- What are the overall sales trends?
+- Which products generate the highest revenue?
+- Which customers contribute the most sales?
+- Which regions perform the best?
+- How do sales compare against budget?
+- Which products require business attention?
+
+---
+
+# 🗄 Data Warehouse Schema
+
+The project uses a **Star Schema** consisting of:
+
+### Fact Table
+
+- FACT_InternetSales
+
+### Dimension Tables
+
+- DIM_Calendar
+- DIM_Customer
+- DIM_Product
+
+This schema improves reporting performance and simplifies Power BI relationships.
+
+---
+
+# 🧹 SQL Data Cleaning
+
+The SQL scripts perform:
+
+- Removing unnecessary columns
+- Renaming columns
+- Formatting dates
+- Handling NULL values
+- Creating business-friendly fields
+- Data filtering
+- Data transformation
+- Exporting cleaned datasets
+
+SQL concepts used:
+
+- SELECT
+- WHERE
+- ORDER BY
+- CASE
+- ISNULL
+- LEFT JOIN
+- INNER JOIN
+- CAST
+- CONVERT
+- CONCAT
+
+---
+
+# 📈 Power BI Dashboard Features
+
+The dashboard includes:
+
+- Executive Sales Summary
+- KPI Cards
+- Sales Trend Analysis
+- Customer Analysis
+- Product Analysis
+- Geographic Sales Analysis
+- Budget vs Actual Sales
+- Top 10 Products
+- Top Customers
+- Monthly Sales Performance
+- Interactive Filters
+- Drill-through Pages
+- Dynamic Tooltips
+
+---
